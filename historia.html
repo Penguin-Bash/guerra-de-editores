@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guerra de editores</title>
+</head>
+
+<body>
+    <header>
+        <h1>Historia de la guerra de editores</h1>
+        <nav>
+            <a href="index.html">Inicio</a> | <a href="team.html">Equipo</a> | <a href="historia.html">Historia</a> | <a
+                href="licencia.html">Licencia</a> | <a href="discalimer.html">Disclaimer</a>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <p>
+            La guerra de editores es un nombre común de la rivalidad entre los usuarios del editor de textos vi y
+            usuarios de Emacs. La rivalidad se ha convertido en una parte permanente de la cultura hacker y la comunidad
+            del <a href="https://www.gnu.org/philosophy/free-sw.es.html">software libre</a>.
+        </p>
+        <p>
+            Muchas <i>flame wars</i> se han librado entre los grupos que insisten en que su editor predilecto es el
+            parangón de
+            la perfección de la edición, y desacreditan a los otros. A diferencia de las batallas relacionadas con
+            sistemas operativos, lenguajes de programación, e incluso el estilo de sangrado del código fuente, la
+            elección del editor por lo general no tiene consecuencias para terceras personas.
+        </p>
+        <h2>Diferencias entre Emacs y Vi</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th>Emacs</th>
+                <th>Vi</th>
+            </tr>
+            <tr>
+                <th>Ejecución de pulsaciones</th>
+                <td>Los comandos de Emacs son combinaciones de teclas en las cuales teclas modificadoras (Alt, Ctrl,
+                    Shift) se mantienen presionadas mientras otras teclas se presionan. Un comando se ejecuta cuando ha
+                    sido introducido completamente. Esto forma un árbol de decisión para los comandos, pero no para cada
+                    tecleo.</td>
+                <td>Al editar en vi, el editor registra las permutaciones de teclas pulsadas. Esto crea un camino en el
+                    árbol de decisión lo cual define sin ambigüedad cualquier comando.</td>
+            </tr>
+            <tr>
+                <th>Uso de memoria y personalización</th>
+                <td>Emacs toma más tiempo en iniciar (incluso comparado a vim)y requiere más memoria. Sin embargo, es
+                    altamente personalizable e incluye un gran número de características, ya que es esencialmente un
+                    ambiente de ejecución para un programa de Lisp diseñado para editar texto. Muchas versiones de Emacs
+                    incluyen un modo servidor diseñado para correr de manera continua en segundo plano. Muchas
+                    instancias de emacsclient pueden iniciarse, conectandolas al servidor y compartiendo estado. El
+                    tiempo de inicio de Emacsclient es prácticamente instantáneo.</td>
+                <td>Históricamente, vi es un programa más pequeño y más rápido, pero con menos capacidades para ser
+                    personalizado. La versión del editor, vim ha evolucionado para proveer mayor funcionalidad y
+                    personalización a vi, haciéndolo comparable con Emacs[notes 1]. El tiempo de inicio de vi es casi
+                    instantáneo para archivos pequeños, mientras que vim es casi igual de rápido.</td>
+            </tr>
+            <tr>
+                <th>Interfaz de usuario</th>
+                <td>Emacs, aunque fue diseñado originalmente para uso en consola, desarrolló una Interfaz de texto
+                    bastante pronto, debido a la herencia de la máquina Lisp. Las interfaces gráficas de Emacs actuales,
+                    incluyen soporte para fuentes proporcionales y para variaciónes en el tamaño del texto</td>
+                <td>
+                    Originalmente vi se usaba sólo dentro de una consola de modo texto, por lo que no ofrecía una
+                    interfaz gráfica de usuario(GUI). La mayoría de los derivados modernos de vi (MacVim y gVim),
+                    incluyen GUI. Sin embargo carece de soporte para familias de fuentes proporcionales, igual que de
+                    soporte para fuentes de diferentes tamaños en el mismo documento.
+                </td>
+            </tr>
+            <tr>
+                <th>Interfaz de navegación</th>
+                <td>Emacs usa teclas especiales.</td>
+                <td>vi usa distintos modos de edición.</td>
+
+            </tr>
+            <tr>
+                <th>Teclado</th>
+                <td>Emacs usa las teclas <Alt> y <Ctrl>, y recurre con regularidad a <Shift>. Emacs usa todas las teclas
+                                usuales regularmente, lo que tiende a estimular el uso ambidiestro de su simetría.</td>
+                <td>vi no usa la tecla <Alt> y pocas veces utiliza la tecla <Ctrl>. De modo que vi usa solo la mayoría
+                            de las teclas "usuales"</td>
+            </tr>
+            <tr>
+                <th>Soporte de lenguajes y de scripts</th>
+                <td>Emacs tiene soporte completo para todos los sistemas de escritura compatibles con Unicode.</td>
+                <td>vi tiene un soporte rudimentario para lenguajes diferentes al inglés. Vim es parcialmente
+                    multilingue, con soporte para para idiomas europeos, arábigo, hebreo y lenguajes del este de Asia
+                    únicamente. De forma notable. el soporte para el lenguas indoarias y soporte para scripts está
+                    ausente.</td>
+            </tr>
+        </table>
+        <div>
+            <h2>Ventajas de Emacs</h2>
+            <ul>
+                <li>
+                    Emacs tiene una interfaz no modal.
+                </li>
+                <li>
+                    Es uno de los programas de computador más portados (adaptados a otros sistemas). Corre en una
+                    variedad de sistemas operativos, incluyendo a la mayoría de los similares a Unix, (GNU/Linux, las
+                    diferentes variedades de BSD, Solaris, AIX, IRIX, OS X etc.), MS-DOS, Microsoft
+                    Windows, AmigaOS, y OpenVMS. Sistemas Unix, libres y propietarios, con frecuencia proveen
+                    Emacs incluído con el sistema operativo.
+                </li>
+                <li>
+                    Es extensible y personalizable (con la variante del lenguaje de programación de Lisp, Emacs Lisp),
+                    cuyas extensiones incluyen:
+                    <ul>
+                        <li>
+                            La capacidad de emulador vi y vim (usando el modo viper y evil[extensible vi layer ])
+                        </li>
+                        <li>
+                            Un gestor de archivos poderoso (dired), un depurador integrado, y un gran conjunto de
+                            herramientas de desarrollo y de otros tipos.
+                        </li>
+                        <li>
+                            "Un <b>sistema operativo</b> dentro de un SO". La extensibilidad permite que Emacs sea
+                            programado
+                            más allá de las extensiones de edición. Incluso una instalación base contiene varias
+                            aplicaciones, incluyendo lectores de noticias, clientes de correo, juegos y las versiones
+                            adicionales incluyen navegador web, clientes IRC, EMMS (Emacs MultiMedia System, reproductor
+                            de audio cuyo nombre fue tomado de XMMS), y más. Naturalmente esto incluye también
+                            integración con herramientas de desarrollo (para programar todo esto hace de Emacs al menos
+                            un Entorno de desarrollo integrado, no solo un editor de código).
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>Humor</h2>
+            <table class="tabla-historia">
+                <tr class="tabla-historia">
+                    <td class="tabla-historia">
+                        <p>
+                            Frecuentemente, en algún punto de la discusión, alguien señalará que ed es el <i>editor de
+                                texto
+                                estandar</i>.
+                        </p>
+                        <p>
+                            La Iglesia de Emacs, organizada por Richard Stallman, es una parodia. Aun cuando Stallman
+                            (quien
+                            se ha presentado como St IGNU−cius, un santo de la Iglesia de Emacs): se riefiere a vi como
+                            el
+                            "editor de la bestia" (vi-vi-vi es 6-6-6 en números romanos), no se opone al uso de este
+                            editor; en
+                            cambio, considera al software propietario como anatema. ("Usar una versión libre de vi no es
+                            un pecado
+                            sino una penitencia.") La Iglesia de Emacs tiene su propio grupo de noticias,
+                            alt.religion.emacs,] que incluye publicaciones en apoyo de esta religión paródica.
+                        </p>
+                        <p>
+                            Los partidarios de vi han creado en oposición el Culto a vi, lo cual, argumentan los
+                            usuarios de línea
+                            dura de Emacs, es un intento de imitar a sus superiore
+                        </p>
+                        <p>
+                            En cuanto a la naturaleza modal de vi, algunos de los usuarios de Emacs bromean diciendo que
+                            vi tiene
+                            dos modos: "pitar repetidamente" y "destruir todo". Los usuarios de vi disfrutan contando
+                            chistes de que
+                            las secuencias de de teclado de Emacs producen síndrome del túnel carpiano, o mencionando
+                            una de las
+                            muchas expansiones satíricas del acrónimo EMACS, como "Escape Meta Alt Control Shift" (una
+                            pulla a la
+                            dependencia de Emacs en las teclas modificadoras). o "Eight Megabytes And Constantly
+                            Swapping" (ocho
+                            Megabytes e hiperpaginación constante, en un tiempo en el que ocho Megabytes era una gran
+                            cantidad de
+                            memoria) o "EMACS Makes Any Computer Slow" [EMACS hace a cualquier computador lento] (un
+                            acrónimo
+                            recursivo como los que usa Stallman) o "Eventually Munches All Computer Storage"
+                            (Eventualmente masca
+                            todo el almacenamiento del computador), en referencia a sus altos requerimientos de
+                            recursos.
+                        </p>
+                        <p>
+                            GNU EMACS
+                            ha sido expandido a "Generally Not Used, Except by Middle-Aged Computer Scientists"
+                            [Generalmente no
+                            usado, excepto por científicos de computadores de la edad mediana] haciendo referencia a sus
+                            fanáticos
+                            más ardientes, y la declinación de su uso entre programadores jóvenes comparado con Entornos
+                            de
+                            Desarrollo Integrado y editores más orientados a gráficos como TextMate o SublimeText. La
+                            distribución
+                            de Emacs distribution incluye una lista completa de los acrónimos.
+                        </p>
+                        <p>
+                            Como una pulla a la adición constante de extensiónes a Emacs, los partidarios de vi han
+                            llegado a
+                            describir a Emacs como "un gran sistema operativo, que sólo carece de un editor decente".
+                        </p>
+                        <p>
+                            Un juego entre los usuarios de UNIX, ya sea para probar la profundidad del conocimiento de
+                            un usuario de
+                            Emacs o para burlarse de la complejidad de Emacs, tiene que ver con predecir qué pasaría si
+                            el usuario
+                            mantuviera presionada una tecla modificadora (como Ctrl o Alt) y escribiera su propio
+                            nombre. Un "juego"
+                            similar se jugaba según reportes [18] entre los usuarios del viejo editor TECO, en el cual
+                            están las
+                            raíces de lo que sería Emacs.
+                        </p>
+                        <p>
+                            Debido a la poco intuitiva secuencia de caracteres para salir de vi (":q"), los hackers
+                            bromean
+                            proponiendo un método para crear una secuenica binaria seudoaleatoria que consiste en hacer
+                            que un
+                            usuario no familiarizado con vi se siente frente a un editor abierto y se le pida salir del
+                            programa.
+                        </p>
+                    </td>
+                    <td class="tabla-historia">
+                        <figure>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Richard_Stallman_-_Preliminares_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+                                alt="" width="300px">
+                            <figcaption>
+                                By Preliminares 2013, <a href="https://creativecommons.org/licenses/by-sa/2.0"
+                                    title="Creative Commons Attribution-Share Alike 2.0">CC BY-SA 2.0</a>, <a
+                                    href="https://commons.wikimedia.org/wiki/Special:Redirect/page/23722123">Link</a>
+                            </figcaption>
+                        </figure>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2>Estado pasado y actual de la guerra de editores</h2>
+            <p>
+                Muchos programadores usan ya sea Emacs o vi o sus varios descendientes, incluyendo a Linus Torvalds que
+                usa MicroEMACS. Tim O'Reilly dijo en 1999 que el tutorial sobre vi de O'Reilly Media, Learning the
+                vi and Vim Editors, vende el doble de copias que el manual de Emacs (aunque anotó que Emacs viene con un
+                manual gratuito incuído).
+            </p>
+            <p>
+                Por otra parte, en 1999 también, el creador de vi, Bill Joy, dijo que vi fue "escrito para un mundo que
+                ya no existe" y afirmó que Emacs fue escrito en máquinas de muchas más capacidades, con monitores más
+                rápidos, por lo que podía tener "commandos divertidos con la pantalla titilando y todo eso, y mientras
+                tanto, yo me siento en mi casa en un alojamiento sobrante en Berkeley, con un modem y una terminal que
+                apenas pueden poner el cursor al final de la linea".
+            </p>
+            <p>
+                Han aparecido muchos editores pequeños, modelados a partir de vi o derivados de él. Esto se debió en un
+                principio a la importancia de conservar la minúscula cantidad de memoria disponible en esa época. A
+                medida que los computadores se han hecho más rápidos, muchos clones de vi, Vim en particular, han
+                crecido en tamaño y complejidad de código. Estas variantes de vi de hoy, así como las antiguas variantes
+                ligeras de Emacs, tienden a tener muchas de las ventajas y desventajas de sus competidores. Por ejemplo,
+                Vim sin extensiones requiere diez veces el espacio en el disco que requiere vi, y las versiones más
+                reciententes de Vim pueden tener más extensiones y ser más lentos que versiones pasadas de Emacs.
+            </p>
+            <p>
+                Más aún, con las grandes cantidades de RAM en los computadores modernos, vi y Emacs por igual, son
+                ligeros comparados a los enormes entornos integrados de desarrollo como Eclipse, los cuales tienden a
+                producir burlas de los usuarios de vi y de Emacs por igual. Existen otros editores como pico, nano (su
+                clon libre y de códio abierto) y ne, que tienen sus partidarios en las guerras de editores, aunque no en
+                la medida que vi y Emacs. Muchos sistemas operativos, especialmente GNU/Linux y los derivados de BSD,
+                empacam varios editores con su sistema operativo para complacer las demandas de usuario- Por ejemplo, un
+                instalación por defecto de Mac OS X contiene Emacs, Vim, nano y ed.
+            </p>
+        </div>
+        <hr>
+    </main>
+    <footer>
+        <marquee direction="up" scrollamount="2.32">
+            <h1>Licencia de la página</h1>
+            <p>
+                El contenido de está página en concreto, está basado en el artículo <a
+                    href="https://es.wikipedia.org/w/index.php?title=Guerra_de_editores&oldid=76867691">«Guerra de
+                    editores»</a> de Wikipedia, concretamente en
+                la versión del 9 de septiembre de 2014 a las 13:38.
+            </p>
+            <p>
+                El texto original ha sido elaborado por los colaboradores de Wikipedia y se distribuye bajo la licencia
+                Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
+            </p>
+            <p>
+                Para consultar los autores originales y el historial de modificaciones, véase el <a
+                    href="https://es.wikipedia.org/w/index.php?title=Guerra_de_editores&action=history">historial del
+                    artículo</a> en
+                Wikipedia.
+            </p>
+            <p>
+
+            </p>
+            <img src="https://licensebuttons.net/l/by-sa/3.0/88x31.png"
+                alt="Licencia creative commons Atribución/Reconocimiento-CompartirIgual 4.0 Internacional">
+        </marquee>
+    </footer>
+</body>
+
+</html>
