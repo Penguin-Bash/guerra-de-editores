@@ -6,5 +6,5 @@ Para acceder cómodamente al contenido, se puede usar el siguiente enlace:
 https://penguin-bash.github.io/guerra-de-editores/
 
 --- 
-La licencia principal de este repositorio es CC-BY-SA. 
+La licencia principal de este repositorio es CC-BY-SA 4.0. 
 Los elementos externos que se hayan usado y que también tengan una licencia CC, se han especificado en la página de licencia y/o individualmente en cada elemento.
